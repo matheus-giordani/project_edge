@@ -2,6 +2,7 @@ from django.shortcuts import render
 from rest_framework import viewsets
 from . import models
 from . import serializers
+from django_filters.rest_framework import DjangoFilterBackend
 
 
 # Create your views here.
@@ -17,4 +18,5 @@ class DevicesView(viewsets.ModelViewSet):
 class DevicesControlView(viewsets.ModelViewSet):
     queryset = models.DevicesControl.objects.all()
     serializer_class = serializers.DevicesControlSerializer
-    
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['device','peaple' ]
