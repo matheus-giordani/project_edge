@@ -10,7 +10,7 @@ casa.
 mais dispositivos.
 
 ## stacks
-> Projeto utilza a liguagem python com o uso do framework web Django Rest framework e para realizar o deploy da aplicaçao foi utilzado uma instância Ec2 com uma maquina Linux e utiliza o banco postgres que está no Rds
+> Projeto utiliza a linguagem python com o uso do framework web Django Rest framework e para realizar o deploy da aplicaçao foi utilizado uma instância Ec2 com uma maquina Linux e utiliza o banco postgres que está no Rds
 
 
 
@@ -25,7 +25,7 @@ mais dispositivos.
 
 
 ## Abordagem para resolução dos problemas
-> O unico ponto que gostaria de comentar é sobre a relação de n pra n (muitos para muitos) entres os usuarios e os dispositivos acredito que foi o ponto que gera um pouco de duvida de como pensar na arquitetura e resolvi usar o conceito, de banco de dados relacional, entidade associativa entre as tabelas peaple e devices utilizando uma tabela intermediaria devices_control com as chaves primarias de ambas isso pode ser visto no modelo ER disponibilizado acima
+> O único ponto que gostaria de comentar é sobre a relação de N pra N (muitos para muitos) entres os usuarios e os dispositivos. Acredito que é um ponto que gera um pouco de duvida de como pensar na arquitetura e resolvi usar o conceito, de banco de dados relacional, entidade associativa entre as tabelas peaple e devices utilizando uma tabela intermediaria devices_control com as chaves primarias de ambas isso pode ser visto no modelo ER disponibilizado acima
 
 
 ## Instalação
